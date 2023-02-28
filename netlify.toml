@@ -1,0 +1,13 @@
+[build]
+publish = "site"
+command = """
+echo pwd && pwd &&
+echo ls && ls &&
+pip3 install -q poetry &&
+poetry config virtualenvs.in-project true &&
+poetry install -v &&
+poetry run mkdocs build -d site &&
+echo pwd && pwd &&
+echo ls && ls &&
+echo ls site && ls site
+"""

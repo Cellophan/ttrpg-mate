@@ -1,0 +1,53 @@
+site_name: "TTRPG Mate"
+site_url: ""
+use_directory_urls: true
+repo_url: "https://github.com/Cellophan/ttrpg-mate"
+
+theme:
+  name: material
+  features:
+    - tabs
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: 'indigo'
+      accent: 'indigo'
+      font: false
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: 'amber'
+      accent: 'amber'
+      font: false
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  icon:
+    logo: material/exit-run
+
+extra_javascript:
+  - js/randomtable.js
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: "🔗"
+  - def_list
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: false
+      clickable_checkbox: true
+  - pymdownx.tilde:
+      delete: true
+  - pymdownx.progressbar
+  - attr_list
+  - footnotes
+
+plugins:
+  - macros
+  - search:
+      lang: fr
+
