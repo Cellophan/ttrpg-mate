@@ -2,11 +2,14 @@ site_name: "TTRPG Mate"
 site_url: ""
 use_directory_urls: true
 repo_url: "https://github.com/Cellophan/ttrpg-mate"
+edit_uri: "edit/main/docs/"
 
 theme:
   name: material
   features:
     - tabs
+    - content.action.edit
+    - content.action.view
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
